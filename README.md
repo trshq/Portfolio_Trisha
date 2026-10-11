@@ -8,7 +8,7 @@ React portfolio built with Vite, React Router, and Motion.
 npm install
 npm run dev
 ```
-
+a
 Vite prints the local URL when the development server starts.
 
 ## Build
