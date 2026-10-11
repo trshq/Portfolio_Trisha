@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Background Gradient matching portfolio theme -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Inner rim light for a sleek glassmorphic finish -->
+    <linearGradient id="rimLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Star / Sparkle Gradient -->
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+
+    <!-- Soft drop shadow for letterform -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#3b0764" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with smooth corners -->
+  <rect width="64" height="64" rx="16" fill="url(#brandGrad)" />
+
+  <!-- Subtle glossy highlight ring -->
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="none" stroke="url(#rimLight)" stroke-width="1.5" />
+
+  <!-- Stylized Modern "T" Letterform -->
+  <g filter="url(#shadow)">
+    <path
+      d="M17 21 C17 18.5 19 17 21.5 17 H42.5 C45 17 47 18.5 47 21 C47 23.5 45 25 42.5 25 H36 V44 C36 46.8 34.2 49 32 49 C29.8 49 28 46.8 28 44 V25 H21.5 C19 25 17 23.5 17 21 Z"
+      fill="#ffffff"
+    />
+  </g>
+
+  <!-- Creative UI/UX Sparkle Accent -->
+  <path
+    d="M48 9 C48 13.5 50.5 14.5 53 14.5 C50.5 14.5 48 15.5 48 20 C48 15.5 45.5 14.5 43 14.5 C45.5 14.5 48 13.5 48 9 Z"
+    fill="url(#starGrad)"
+    opacity="0.95"
+  />
+  <circle cx="48" cy="14.5" r="1" fill="#ffffff" />
+</svg>
